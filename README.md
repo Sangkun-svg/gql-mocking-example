@@ -23,3 +23,6 @@ When you want to mock some fields or operations on the client side using Apollo 
 3. Use @client directive in queries/mutations
 
 I hope you liked this article. Thanks for reading!
+
+
+<p>Reference : https://marcinkwiatkowski.com/blog/graphql/how-to-mock-graphql-queries-and-mutations</p>
