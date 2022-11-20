@@ -18,4 +18,11 @@ export const resolvers = {
       return publications;
     },
   },
+
+  Mutation: {
+    addPublication: (parent, args, context, info) => {
+      console.log(parent, args, context, info);
+      return "Your publication has been submitted, thank you!";
+    },
+  },
 };

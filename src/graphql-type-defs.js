@@ -13,4 +13,8 @@ export const typeDefs = gql`
     name: String!
     url: String!
   }
+
+  type Mutation {
+    addPublication(name: String!, url: String!): String
+  }
 `;
