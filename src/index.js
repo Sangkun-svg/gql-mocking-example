@@ -5,6 +5,7 @@ import App from "./App";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 import { typeDefs } from "./graphql-type-defs";
 import { faker } from "@faker-js/faker";
+import { resolvers } from "./graphql-resolvers";
 
 const client = new ApolloClient({
   uri: "https://api.spacex.land/graphql/",
@@ -31,6 +32,7 @@ const client = new ApolloClient({
     },
   }),
   typeDefs,
+  resolvers,
 });
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
