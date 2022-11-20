@@ -1,5 +1,5 @@
 import { useQuery } from "@apollo/client";
-import { MISSIONS_QUERY } from "./apollo/query/mission.query";
+import { MISSIONS_QUERY } from "./apollo/query/mission.gql";
 
 export const Mission = () => {
   const { loading, error, data } = useQuery(MISSIONS_QUERY);
